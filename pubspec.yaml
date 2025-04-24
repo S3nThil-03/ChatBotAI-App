@@ -1,0 +1,32 @@
+name: one
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  google_generative_ai: ^0.4.6
+  intl: ^0.18.0 
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+  flutter_launcher_icons: ^0.13.1  # Added for app icon generation
+
+flutter:
+  uses-material-design: true  # Correct placement
+  
+  assets:
+    - assets/bg.jpg  # Ensure this file exists in your assets folder
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/app_icon.jpg"  # Path to your app icon (512x512 recommended)
+  adaptive_icon_foreground: "assets/app_icon.jpg"  # Optional for Android adaptive icons
